@@ -46,40 +46,56 @@ const AppShowcase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
-        <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+        <h3 className="showcase-category-title">Real Projects</h3>
+        <div className="showcase-grid">
+          <div className="project-card" ref={ycDirectoryRef}>
+            <div className="project-image bg-[#FFE7EB]">
+              <img src="/images/project1.png" alt="Crosscan" />
             </div>
-            <div className="text-content">
-              <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
-              </p>
+            <div className="flex align-center gap-2">
+              <h2>Crosscan</h2>
+              <a href="https://crosscan.com/en/" target="_blank">
+                <img className="w-8 h-8" src="/images/link-svgrepo-com.svg" alt="Link icon" />
+              </a>
             </div>
+            <p className="text-white-50 text-md mt-2">
+              Highly accurate people counting and visitor analytics for data-driven and efficient space management
+            </p>
           </div>
 
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
-              </div>
-              <h2>The Library Management Platform</h2>
+          <div className="project-card" ref={rydeRef}>
+            <div className="project-image bg-[#FFE7EB]">
+              <img src="/images/project3.png" alt="Mocion" />
             </div>
+            <div className="flex align-center gap-2">
+              <h2>Mocion</h2>
+              <a href="https://mocion.io" target="_blank">
+                <img className="w-8 h-8" src="/images/link-svgrepo-com.svg" alt="Link icon" />
+              </a>
+            </div>
+            <p className="text-white-50 text-md mt-2">
+              Effortless Padel Court Booking & Player Management Mocion
+              is an app for padel players, making court booking, payments
+            </p>
+          </div>
+        </div>
 
-            <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
-              </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+        <h3 className="showcase-category-title mt-16">Personal Projects</h3>
+        <div className="showcase-grid">
+          <div className="project-card" ref={libraryRef}>
+            <div className="project-image bg-[#FFE7EB]">
+              <img src="/images/project2.png" alt="Library App" />
             </div>
+            <div className="flex align-center gap-2">
+              <h2>Library Management Platform</h2>
+              <a href="https://github.com/AliHasanIbrahim47/unversity-library" target="_blank">
+                <img className="w-8 h-8" src="/images/link-svgrepo-com.svg" alt="Link icon" />
+              </a>
+            </div>
+            <p className="text-white-50 text-md mt-2">
+              The Library Management Platform is a web application that allows users to manage their
+              library's books, users, and borrowing records.
+            </p>
           </div>
         </div>
       </div>
