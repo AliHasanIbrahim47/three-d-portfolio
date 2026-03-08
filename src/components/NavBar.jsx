@@ -22,6 +22,23 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+
+    const resumeUrl = "/resume.pdf";
+    
+    // Option 1: Download the resume
+    // const link = document.createElement("a");
+    // link.href = resumeUrl;
+    // link.download = "Ali_Ibrahim_Resume.pdf"; // Specify the filename for download
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
+
+    // Option 2: Open in new tab (uncomment below and comment out the download code above)
+    window.open(resumeUrl, '_blank');
+  };
+
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
@@ -42,11 +59,22 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        <div className="flex flex-row gap-4">
+          <a
+            href="#resume"
+            className="contact-btn group"
+            onClick={handleResumeClick}
+          >
+            <div className="inner">
+              <span>Resume</span>
+            </div>
+          </a>
+          <a href="#contact" className="contact-btn group">
+            <div className="inner">
+              <span>Contact me</span>
+            </div>
+          </a>
+        </div>
       </div>
     </header>
   );
