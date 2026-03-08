@@ -122,19 +122,19 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "NodeJS",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "C++ Developer",
+    name: "CI/CD",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "Dev Ops",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
@@ -144,41 +144,28 @@ const techStackIcons = [
 const expCards = [
   {
     review:
+      "Ali's contributions to Crosscan's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo1.png",
+    title: "Full Stack Developer (LIT)",
+    date: "January 2025 - Present",
+    responsibilities: [
+      "Developed scalable GraphQL APIs using Django to support enterprise data workflows.",
+      "Built interactive dashboards and real-time data visualizations using React, TypeScript, and uPlot.",
+      "Implemented user, company, and location management features following modular design principles.",
+    ],
+  },
+    {
+    review:
       "Ali brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    logoPath: "/images/logo2.png",
+    title: "Frontend Developer (Aratech)",
+    date: "October 2023 - December 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
+      "Developed and maintained user-facing features for the Aractech website.",
       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
       "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review:
-      "Ali's contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review:
-      "Ali's work on Appwrite's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
     ],
   },
 ];
@@ -191,10 +178,6 @@ const expLogos = [
   {
     name: "logo2",
     imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
   },
 ];
 
