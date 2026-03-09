@@ -146,8 +146,8 @@ const expCards = [
     review:
       "Ali's contributions to Crosscan's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
-    logoPath: "/images/logo1.png",
-    title: "Full Stack Developer (LIT)",
+    logoPath: "/images/logo11.png",
+    title: "Full Stack Developer (Intenta ARC GmbH)",
     date: "January 2025 - Present",
     responsibilities: [
       "Developed scalable GraphQL APIs using Django to support enterprise data workflows.",
